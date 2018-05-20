@@ -14,7 +14,7 @@ Single page application:
 
 Maps:
 - Google maps
--Leaflet.js uses open street view. (open source) 
+- Leaflet.js uses open street view. (open source) 
 
 Hosting:
 - Firebase (free and has a bit bucket storage system that allows for live updates) 
