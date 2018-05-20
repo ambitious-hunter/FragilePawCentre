@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load bootstrap_tags %}
+{% block content %}
+    <div class="subheader registration">
+        <h1>New Blog Entry</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form|as_bootstrap }}
+            <button type="submit" class="btn btn-info">Submit Post</button>
+        </form>
+    </div>
+{% endblock %}

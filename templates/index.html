@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block content %}
+    <section class="subheader">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel">
+                        <div class="panel-body">
+                            <div>
+                                <h1 class="centered">Volunteers needed</h1>
+                            </div>
+                            <div class="centered">
+                                <p>Sign up and be part of our team</p>
+                                <button class="btn btn-default" onclick="location.href='/register'">Register now!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subheader teal">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel">
+                        <div class="panel-body">
+                            <h1 class="centered">Our recent blogs</h1>
+                             <button class="btn btn-default" onclick="location.href='/paw_blog'">Read More!
+                             </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subheader green">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel">
+                        <div class="panel-body">
+                            <h1 class="centered">Adopt Me</h1>
+                            <button class="btn btn-default" onclick="location.href='/dogentries'">Read More!
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="subheader">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel">
+                        <div class="panel-body">
+                            <h1 class="centered">Our Location</h1><br>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <p>Contact number: 01-1234567</p>
+                                    <p>email:abc@defgh.ij</p>
+                                    <p>Address: 123 Fake Street, Fake road, Fake City, Fake State, Fake Country</p>
+                                </div>
+                                <div class="col-md-8 centered">
+                                    <p>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.654870845717!2d-6.3267897531254205!3d53.33153259042898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670b496ce91427%3A0x80312cd48be9a700!2sTallaght%2C+Dublin!5e0!3m2!1sen!2sie!4v1525539919935"
+                                                width="400" height="300" frameborder="0" style="border:0"
+                                                allowfullscreen></iframe>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

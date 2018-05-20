@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel">
+                    <div class="panel-body">
+                        <div class="col-xs-9 postpage-content">
+                            <h2>{{ post.title }}</h2>
+                            <hr>
+                            <p>{{ post.content }}</p>
+                            <button class="btn btn-default" onclick="location.href='/paw_blog'">Back To Blog</button>
+                            <p>Posted on {{ post.published_date }} by {{ post.author }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

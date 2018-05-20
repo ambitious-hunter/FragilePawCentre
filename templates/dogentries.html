@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+        <div class="col-md-12">
+            <div class="row">
+                {% for entry in entries %}
+                    <div class="col-md-6">
+                        <div class="card mb-6 box-shadow post-container">
+                            <div class="col-md-12">
+                                <h3>{{ entry.title }}</h3>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-xs-9">
+                                        {% if entry.image %}
+                                        <img src="/media/{{ entry.image }}" class="dogimage">
+                                        {% endif %}
+{#                                        <p>#}
+{#                                            <button class="btn btn-default" onclick="location.href={{ entry.id }}">Read#}
+{#                                                More#}
+{#                                            </button>#}
+{#                                        </p>#}
+                                        <p>Posted on {{ entry.published_date }} by {{ entry.author }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
